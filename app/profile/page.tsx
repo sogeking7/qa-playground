@@ -2,6 +2,9 @@
 
 import {Button} from "@/components/ui/button";
 import React from "react";
+import DelayedMessage from "@/components/DelayedMessage";
+import ActionClassTest from "@/components/ActionClassTest";
+import SelectClassTest from "@/components/SelectClassTest";
 
 export default function Page() {
     const [sayHello, setSayHello] = React.useState(false);
@@ -18,6 +21,9 @@ export default function Page() {
             {sayHello && <p className={"text-amber-500 text-3xl font-bold text-center"}>
                 Hello 🙋🏿‍♂️!
             </p>}
+            <DelayedMessage />
+            <ActionClassTest />
+            <SelectClassTest />
         </div>
     )
 }
